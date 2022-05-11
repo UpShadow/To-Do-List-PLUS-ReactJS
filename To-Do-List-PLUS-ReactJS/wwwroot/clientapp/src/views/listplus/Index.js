@@ -44,7 +44,7 @@ export default class Index
         let index = -1;
         
         for(let pos = 0;pos < tasksAux.length;pos++)
-            if(tasksAux[pos] == i)
+            if(tasksAux[pos].task == i.task)
                 index = pos;
         if(index > -1) {
             tasksAux.splice(index, 1)
