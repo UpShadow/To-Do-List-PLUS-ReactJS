@@ -80,8 +80,7 @@ export default class Index
                 this.setState ({
                     vetAux: tasksAux,
                 });
-            }
-                
+            }       
     }
 
     render = () => {
