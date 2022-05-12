@@ -49,7 +49,7 @@ td {
 
 .form {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding-top: 20px;
     padding-bottom: 25px;
     gap: 10px;
@@ -74,15 +74,9 @@ button-style:houver {
 .list-search {
     display: flex;
     flex-direction: column;
-    align-items: space-around;
     height: 500px;
     padding-top: 3%;
     padding-left: 28%;
-}
-
-tr {
-    display: flex;
-    flex-direction: row;
 }
 
 .search-input {
@@ -111,8 +105,4 @@ button:hover {
 
 .search-button-edit:hover {
     background-color: rgb(38, 38, 206);
-}
-
-.search-result {
-    padding-left: 30px;
 }

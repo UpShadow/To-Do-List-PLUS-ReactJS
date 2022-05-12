@@ -13,7 +13,7 @@ export default class Index
                 id: "",
                 task: "",
             },
-            tasks: [],
+            tasks: [{id: "1", task: "wash the dishes"}, {id: "2", task: "clean the room"}, {id: "3", task: "wash the bathroom"}],
             indexEdicao: -1,
             filter: ""
         }
@@ -102,7 +102,6 @@ export default class Index
                         <input class="search-input" placeholder="Type task here to search" type="search" value={this.state.filter} onChange={(e) => this.setState({ ...this.state, filter: e.target.value }, () => { this.search() } )}/>
                     </div>            
                     <br />
-                    <br />
                 </div>
                     <table class="list-search">
                     {         
@@ -111,15 +110,13 @@ export default class Index
                             {
                                 return (    
                                     <tr>
-                                        <td class="search-result">{i.id + " - " + i.task}</td>
-                                        <div class="search-buttons">
+                                        <td>{i.id + " - " + i.task}</td>
                                             <td>
                                                 <button class="search-button-delete" type="button" onClick={() => this.delete(i)}>Delete</button>
                                             </td>
                                             <td>
                                                 <button class="search-button-edit" type="button" onClick={() => this.edit(i)}>Edit</button>
                                             </td>
-                                        </div>
                                     </tr>
                                 )
                             }                           
